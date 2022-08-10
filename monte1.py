@@ -4,7 +4,6 @@ import time
 
 start = time.time()
 
-pi = 3.14
 trial = 10000000
 x = []
 y = []

@@ -2,8 +2,7 @@ import random
 import numpy
 import matplotlib.pyplot as plt
 
-pi = 3.14
-trial = 100000
+trial = 1000
 x = []
 y = []
 true = 0
