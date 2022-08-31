@@ -1,8 +1,11 @@
 import random
 import numpy
 import matplotlib.pyplot as plt
+import time
 
-trial = 1000
+start = time.time()
+
+trial = 1000000
 x = []
 y = []
 true = 0
@@ -21,6 +24,10 @@ for i in range(trial):
 result = 4*(true/(true+false))
 
 print(result)
+elapsed_time = time.time() - start
+
+print("elapsed_time:{0}".format(elapsed_time) + "[sec]")
+
 
 c1 = plt.Circle((0, 0), radius=1, fc="None",
                 ec="r", linewidth=2, color="black")
